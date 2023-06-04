@@ -28,6 +28,7 @@ function TransactionForm() {
           onChange={(e) => setDescription(e.target.value)}
           className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full"
           value={description}
+          required
         />
         <input
           type="number"
@@ -37,6 +38,7 @@ function TransactionForm() {
           onChange={(e) => setAmount(e.target.value)}
           className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full"
           value={amount}
+          required
         />
         <button className="bg-indigo-700 text-white px-3 py-2 rounded-lg block mb-2 w-full">
           Agregar Transacción
