@@ -1,12 +1,15 @@
-import {useGlobalState} from '../context/GlobalState'
+import { useGlobalState } from "../context/GlobalState";
 
 function Balance() {
-    const data = useGlobalState()
+
+  const data = useGlobalState();
+
   return (
     <div>
-      Balance
+      <h1>Balance</h1>
+      <div>{JSON.stringify(data)}</div>
     </div>
   )
 }
 
-export default Balance
+export default Balance;
