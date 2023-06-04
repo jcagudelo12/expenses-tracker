@@ -11,7 +11,7 @@ function TransactionForm() {
     addTransaction({
       id:window.crypto.randomUUID(),
       description,
-      amount
+      amount : +amount //El + convierte a número el string que llegue como amount
     });
     console.log(description, amount);
   };
