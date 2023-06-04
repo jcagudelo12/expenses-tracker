@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import { useGlobalState } from "../../context/GlobalState";
 
 function TransactionForm() {
-  const {addTransaction} = useGlobalState();
+  const { addTransaction } = useGlobalState();
   const [description, setDescription] = useState();
   const [amount, setAmount] = useState(0);
 
   const onSubmit = (e) => {
     e.preventDefault();
     addTransaction({
-      id:window.crypto.randomUUID(),
+      id: window.crypto.randomUUID(),
       description,
-      amount : +amount //El + convierte a número el string que llegue como amount
+      amount: +amount, //El + convierte a número el string que llegue como amount
     });
     console.log(description, amount);
   };

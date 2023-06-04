@@ -13,7 +13,7 @@ const total = amounts.reduce((acc, item) => (acc += item), 0)
       <h1>${total}</h1>
       {JSON.stringify(total, null, 2)}
     </div>
-  )
+  );
 }
 
 export default Balance;
